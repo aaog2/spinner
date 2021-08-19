@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #f9f9f9f9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message-box{
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+    background-color: tomato;
+    color: #eeeeee;
+    border: 2px solid red;
+    border-radius: 20px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+    /*display: none;*/
+
+}
+
+.container{
+    width: 400px;
+    background-color: transparent;
+
+    position: relative;
+
+    transition: all 3s;
+
+}
+
+.container .arrow{
+    position: absolute;
+    top: 5px;
+    left: 48%;
+
+    z-index: 1;
+}
+
+.container img{
+    width: inherit;
+    background-color: transparent;
+
+    z-index: -1;
+
+}
+
+.container img.spin{
+    width: inherit;
+    background-color: transparent;
+
+    z-index: -1;
+
+    /*transform: rotate(180deg);*/
+
+    /*animation-name: myani;*/
+    /*animation-duration: 3s;*/
+    /*animation-timing-function: linear;*/
+    /*animation-iteration-count: 1;*/
+
+}
+
+/*@keyframes myani {*/
+/*    0%{*/
+/*      transform: rotate(0deg);*/
+/*    }*/
+/*    100%{*/
+/*       transform: rotate(180deg);*/
+/*    }*/
+/*}*/
+
+
+.btn{
+    font-size: 20px;
+    background-color: aqua;
+    color: purple;
+    padding: 10px 20px;
+
+    z-index: 1;
+
+    border: none;
+    border-radius:5px;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
